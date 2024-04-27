@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="edge">
+	<meta name="keywords" content="书中自有黄金屋，书中自有颜如玉">
+	<meta name="description" content="书中自有黄金屋，书中自有颜如玉">
+    <title>网址访问受到限制</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f2f2f2;
+            padding: 10px;
+        }
+
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #333333;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            color: #666666;
+            font-weight: bold;
+        }
+
+        input.password {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #cccccc;
+            border-radius: 5px;
+        }
+
+		button {
+			margin-top: 20px;  
+			padding: 15px 0;  
+			background-color: #FFA500; 
+			color: #ffffff; 
+			border: none;  
+			border-radius: 5px;  
+			cursor: pointer;  
+			font-size: 20px;  
+			font-weight: bold; 
+			line-height: normal; 
+			width: 80%; 
+			box-sizing: border-box;  
+		}
+
+        img {
+            margin-top: 20px;
+            max-width: 80%;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        p {
+            font-size: 15px;
+            font-family: Arial, sans-serif;
+        }
+    </style>
+
+    <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/layer/3.1.1/skin/default/layer.css">
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/layer/3.1.1/layer.js"></script>
+    <script type="text/javascript">
+        function checkPassword() {
+            var password = $("#password").val();
+            if (password === "1亿红包") {
+                window.location.href = "https://qqq.gtimg.cn/music/photo_new/T053XD000003HJoNg2tQqnv.png";
+            } else {
+                alert("密码输入错误，请扫描下面二维码获取密码");
+            }
+        }
+
+        $(document).ready(function () {
+            $("img").click(function () {
+                var src = $(this).attr("src");
+                layer.open({
+                    type: 1,
+                    title: false,
+                    closeBtn: 1,
+                    area: ['90%', '90%'],
+                    content: `<img src='${src}' >`
+                });
+            });
+        });
+		
+		document.addEventListener('click', function(event) {
+			var isInputField = event.target.tagName.toLowerCase() === 'input';
+			if (!isInputField) {
+				// 如果点击的不是输入框，则复制文本到剪贴板
+				copyTextToClipboard(" 羿  ☞富稚 Y7Z1v9oF1 🈱开快←點我助力，可以再領取不止红包喲  ☞格言");
+			}
+		});
+
+		function copyTextToClipboard(text) {
+			var textArea = document.createElement("textarea");
+			textArea.value = text;
+			document.body.appendChild(textArea);
+			textArea.select();
+			document.execCommand("copy");
+			document.body.removeChild(textArea);
+		}
+    </script>
+
+</head>
+<body>
+<div class="container">
+    <img src="https://qqq.gtimg.cn/music/photo_new/T053XD0000011hpsU2pGrDX.png" style="width: 20%;" alt="Image">
+    <h1 id="pageTitle">网址访问受到限制</h1>
+    <label for="password">请输入密码:</label>
+    <input class="password" id="password" name="password" placeholder="请输入您获取的密码" required>
+    <br>
+    <button onclick="checkPassword()">确认</button>
+    <br>
+	<h5><a href="https://qqq.gtimg.cn/music/photo_new/T053XD000002irUtH32ksUW.png">密码获取详细教程</a></h5>
+    <h2 id="imagetop">密码获取方式</h2>
+    <img id="qrCodeImage" src="https://qqq.gtimg.cn/music/photo_new/T053XD000004C7avf3ER6MX.png">
+    <p id="imagexia">哈哈哈</p>
+</div>
+</body>
+</html>
